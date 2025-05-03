@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JZone | J Sost Optman PRD</title>
+  <link rel="stylesheet" href="jona2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>JZone | J Sost Zone</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#beats">Beats</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#upload-work">Upload</a>
+      <a href="#comment">Comments</a>
+      <a href="#chat">Chat</a>
+      <a href="#signin">Sign In</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="beats">
+      <h2>Latest Beats</h2>
+      <div class="beat">
+        <h3>Afrobeat 01</h3>
+        <audio controls>
+          <source src="beats/Afrobeat01.mp3" type="audio/mpeg">
+        </audio>
+        <a class="download" href="beats/Afrobeat01.mp3" download>Download Free</a>
+      </div>
+
+      <h2>Premium Beats (Requires Verification)</h2>
+      <div class="beat premium">
+        <h3>Exclusive Trap</h3>
+        <audio controls>
+          <source src="beats/exclusivetrap.mp3" type="audio/mpeg">
+        </audio>
+        <a class="locked-btn" href="#">Download (Verification Only)</a>
+      </div>
+    </section>
+
+    <section id="verify">
+      <h2>Get Verified to Unlock Premium Beats</h2>
+      <p>Pay Tsh 1,000 to get verified and access all premium beats.</p>
+      <button onclick="verifyAccount()">Verify Account</button>
+    </section>
+
+    <section id="account">
+      <h2>Create an Account / Login</h2>
+      <div class="form-container">
+        <form id="signup-form">
+          <h3>Sign Up</h3>
+          <input type="text" placeholder="Username" required>
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <button type="submit">Sign Up</button>
+        </form>
+
+        <form id="login-form">
+          <h3>Login</h3>
+          <input type="email" id="login-email" placeholder="Email" required>
+          <input type="password" id="login-password" placeholder="Password" required>
+          <button type="button" onclick="handleLogin()">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="upload-work">
+      <h2>Upload Your Work</h2>
+      <p>Showcase your beats, songs, or videos to the world.</p>
+      <form id="upload-form">
+        <input type="text" placeholder="Title of your work" required>
+        <input type="file" accept="audio/*,video/*" required>
+        <textarea placeholder="Description (optional)"></textarea>
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
+    <section id="motivation">
+      <h2>Motivational Uploads</h2>
+      <form id="motivation-form">
+        <input type="text" placeholder="Andika ujumbe wa motisha (hiari)" id="motivation-text">
+        <input type="file" id="motivation-file" accept="image/*,video/*">
+        <button type="submit">Upload Motivation</button>
+      </form>
+
+      <div id="motivation-gallery">
+        <!-- Motivations zitaonyeshwa hapa -->
+      </div>
+    </section>
+
+    <section id="comment">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <textarea id="comment-input" placeholder="Andika comment yako hapa..." required></textarea>
+        <button type="submit">Tuma</button>
+      </form>
+
+      <div id="comment-list">
+        <!-- Maoni yataonyeshwa hapa -->
+      </div>
+    </section>
+
+    <section id="chat">
+      <h2>Member Chat</h2>
+      <p id="welcome-message"></p>
+      <button id="logout-btn" onclick="logoutUser()" style="display: none;">Logout</button>
+      <div id="chat-container">
+        <div id="chat-box">
+          <!-- Ujumbe utaonyeshwa hapa -->
+        </div>
+        <div id="chat-controls">
+          <input type="text" id="message-input" placeholder="Andika ujumbe wako hapa...">
+          <button onclick="sendMessage()">Tuma</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="signin">
+      <h2>Sign In / Sign Up</h2>
+      <form>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com/JonasSosthenesMachele" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://youtube.com/@JSOSTOPTMAN" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://tiktok.com/@JSOSTOPTMANPRD" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a href="https://instagram.com/your_username_here" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>© 2025 JZone | J Sost Optman PRD</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+#main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: #111;
+  color: white;
+  flex-wrap: wrap;
+}
+
+#site-logo {
+  height: 50px;
+  width: auto;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #00ffcc;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00ffcc;
+  color: #000;
+}
+/* Beats Section */
+#beats {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.beat {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #00ffcc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.beat h3 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.beat audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.beat a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 8px 15px;
+  background-color: #00ffcc;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.beat a:hover {
+  background-color: #00ccaa;
+}
+
+#verify {
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-left: 5px solid #00cc99;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+#verify h2 {
+  font-size: 1.6em;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+#verify p {
+  font-size: 1em;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#verify button {
+  background-color: #00cc99;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+#verify button:hover {
+  background-color: #009977;
+}
+#account {
+  background-color: #e0f7fa;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1;
+  min-width: 250px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+form h3 {
+  margin-bottom: 15px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background-color: teal;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#chat-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #f3f3f3;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+#chat-controls {
+  display: flex;
+  gap: 10px;
+}
+
+#message-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#chat-controls button {
+  padding: 10px 15px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#motivation-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#motivation {
+  background-color: #fefefe;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+#motivation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+#motivation-form input[type="text"],
+#motivation-form input[type="file"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 16px;
+}
+
+#motivation-form button {
+  padding: 12px;
+  background-color: #2a74f5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#motivation-form button:hover {
+  background-color: #155bd5;
+}
+
+.motivation-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.motivation-item p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+}ight: 300px;
+  overflow-y: auto;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+#comment {
+  background-color: #fff;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+#comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#comment-input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+#comment-form button {
+  padding: 12px;
+  background-color: #2a74f5;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#comment-form button:hover {
+  background-color: #155bd5;
+}
+
+.comment-item {
+  background-color: #f1f5ff;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #222;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.site-header .logo {
+  height: 50px;
+  width: auto;
+}
+
+.site-header h1 {
+  font-size: 28px;
+  color: #2a74f5;
+  margin: 0;
+}
+
+.social-icons {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.social-icons a {
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #007bff;
+  color: white;
+}
